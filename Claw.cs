@@ -13,10 +13,6 @@ public class Claw : MonoBehaviour
     public GameObject instantiateTransform;
     private int objectNumber;
 
-    [Header("Displaying & Storing Player's Score")]
-    private static int scoreCount;
-    public Text scoreUI;
-
     [Header("Movement")]
     public float playerSpeed;
 
@@ -43,9 +39,6 @@ public class Claw : MonoBehaviour
     private void Update()
     {
         Countdown();
-
-        // Converts The Point Count To Text For HUD
-        scoreUI.text = scoreCount.ToString();
 
         // Player Movement
         Vector3 pos = transform.position;
@@ -112,3 +105,4 @@ public class Claw : MonoBehaviour
     }
 
 }
+
