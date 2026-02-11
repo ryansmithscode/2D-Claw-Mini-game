@@ -95,7 +95,7 @@ public class Claw : MonoBehaviour
         // Prevents Loads Spawning At Once 
         yield return new WaitForSeconds(1f);
 
-        instantiateObject();
+        StartCoroutine(instantiateObject());
     }
 
     //-----------------------------------Countdown----------------------------
@@ -110,4 +110,5 @@ public class Claw : MonoBehaviour
             SceneManager.LoadScene(0);
         }
     }
+
 }
